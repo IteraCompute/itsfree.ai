@@ -136,8 +136,19 @@ files: [src/layouts/Layout.astro, src/lib/seo.ts, src/components/SiteHeader.astr
   by: cursor
   from: agent
   tech: @astrojs/cloudflare adapter, static output, wrangler.jsonc with 404-page
+- [x] Link the GitHub repo from the chrome {#github-link}
+  by: grok
+  from: agent
+  tech: https://github.com/midudev/itsfree.ai in header (mark), footer Project, README
+- [x] Bump Astro, Cloudflare adapter, sitemap and Wrangler {#deps-bump}
+  by: grok
+  from: agent
+  tech: astro 7.3.1, @astrojs/cloudflare 14.3.0, @astrojs/sitemap 3.7.4, wrangler 4.129.1; pnpm stays 11.24.0
 
 ## decisions
+
+- 2026-09-08: The source repo is https://github.com/midudev/itsfree.ai. Header uses the GitHub mark so the phone row still keeps @midudev; footer Project lists GitHub next to itsfree.dev; README points at the same URL.
+- 2026-09-08: Bump to Astro 7.3.1, @astrojs/cloudflare 14.3.0, @astrojs/sitemap 3.7.4, Wrangler 4.129.1. Leave packageManager at pnpm@11.24.0 — Workers Builds is pinned to PNPM_VERSION=11.24.0.
 
 - 2026-09-02: Model-page provider cards stack the quota bar on a phone (limit, then context) and set min-width: 0 so a nowrap mono line cannot push the card past the viewport. Specs and related grids use minmax(min(N, 100%), 1fr).
 

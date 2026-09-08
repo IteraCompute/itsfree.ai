@@ -1,6 +1,6 @@
 # it's free*
 
-Every free way to run an AI model. Live at [itsfree.ai](https://itsfree.ai).
+Every free way to run an AI model. Live at [itsfree.ai](https://itsfree.ai). Source on [GitHub](https://github.com/midudev/itsfree.ai).
 
 [![it's free*](public/og.png)](https://itsfree.ai)
 
