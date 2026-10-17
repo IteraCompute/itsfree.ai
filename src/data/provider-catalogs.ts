@@ -19,6 +19,9 @@ export interface CatalogRow extends CatalogModel {
 }
 
 export const PROVIDER_CATALOGS: Record<string, CatalogModel[]> = {
+	iteracompute: [
+		{ id: 'qwen/qwen3.8-27b', name: 'Qwen3.8-27B' },
+	],
 	"agnes-ai": [
 		{ id: 'agnes-2.5-flash', name: 'Agnes 2.5 Flash' },
 		{ id: 'agnes-2.5-flash-image', name: 'Agnes 2.5 Flash Image' },
