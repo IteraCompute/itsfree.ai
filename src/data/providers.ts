@@ -40,6 +40,24 @@ export interface Provider {
 }
 
 export const PROVIDERS: Record<string, Provider> = {
+	iteracompute: {
+		baseUrl: 'https://api.iteracompute.com/v1',
+		apiKeyUrl: 'https://platform.iteracompute.com/api-keys',
+		envVar: 'ITERACOMPUTE_API_KEY',
+		exampleModel: 'qwen/qwen3.8-27b',
+		requirement: 'email',
+		freeModels: 1,
+		maxContext: '128K',
+		rateLimit: '160,000 tokens/minute, 30,000,000 tokens/month per account; no daily quota',
+		modalities: ['text', 'code', 'reasoning'],
+		openaiCompatible: true,
+		docsUrl: 'https://iteracompute.com/docs.html',
+		gotchas: [
+			'Free-tier limits verified 17 Oct 2026: https://iteracompute.com/free/. Only qwen/qwen3.8-27b is included; other catalog models are paid.',
+			'Input, cached input and output (including reasoning) share the account allowance across all keys. It resets on the first of each month at 00:00 UTC, with no rollover or automatic paid overage.',
+			'Free context is 131,072 tokens including input and requested output; output is capped at 8,192 tokens. Shared capacity may queue, has no SLA and can return 429. Honor Retry-After.'
+		]
+	},
 	'google-ai-studio': {
 		baseUrl: 'https://generativelanguage.googleapis.com/v1beta/openai',
 		apiKeyUrl: 'https://aistudio.google.com/app/apikey',

@@ -5,6 +5,10 @@ Directory of every free way to run an AI model.
 ## Show every free provider {#providers}
 files: [src/data/providers.ts, src/data/provider-about.ts, src/data/provider-catalogs.ts, src/data/resources.ts, src/pages/index.astro, src/pages/provider/[id].astro, src/components/ProviderTable.astro]
 links: [models, collections]
+- [x] List IteraCompute free Qwen access {#iteracompute-free}
+  by: codex
+  from: agent
+  tech: link the recurring 30M-token monthly free tier, 160K TPM, 128K context and one self-hosted Qwen model
 - [x] Refresh OpenRouter’s free model list {#openrouter-free}
   by: cursor
   from: agent
@@ -146,6 +150,8 @@ files: [src/layouts/Layout.astro, src/lib/seo.ts, src/components/SiteHeader.astr
   tech: astro 7.3.1, @astrojs/cloudflare 14.3.0, @astrojs/sitemap 3.7.4, wrangler 4.129.1; pnpm stays 11.24.0
 
 ## decisions
+
+- 2026-10-17: Add IteraCompute from its public free-tier page and live model catalog. List only the free Qwen3.8-27B route, with shared-capacity limits and email signup; do not describe paid models or recharge tiers as unconditional free access.
 
 - 2026-09-08: The source repo is https://github.com/midudev/itsfree.ai. Header uses the GitHub mark so the phone row still keeps @midudev; footer Project lists GitHub next to itsfree.dev; README points at the same URL.
 - 2026-09-08: Bump to Astro 7.3.1, @astrojs/cloudflare 14.3.0, @astrojs/sitemap 3.7.4, Wrangler 4.129.1. Leave packageManager at pnpm@11.24.0 — Workers Builds is pinned to PNPM_VERSION=11.24.0.

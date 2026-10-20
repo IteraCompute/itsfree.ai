@@ -3,6 +3,10 @@
  * provider — not the one-liner used in tables. Figures match providers.ts.
  */
 export const PROVIDER_ABOUT: Record<string, string[]> = {
+	iteracompute: [
+		'IteraCompute hosts Qwen3.8-27B on its own infrastructure and exposes an OpenAI-compatible API at api.iteracompute.com/v1. Sign up with a verified email or Google, create an API key and use qwen/qwen3.8-27b. No credit card or recharge is required for the free tier.',
+		'The free allowance is 30 million input and output tokens per UTC calendar month, shared across account keys, with 160,000 tokens a minute, 128K total context and an 8,192-token output cap. Unused tokens do not roll over. Exhausted quota returns 429 without automatic paid overage; shared free capacity may queue and has no SLA. Paid recharge tiers increase limits but are not required for this allowance. Source: https://iteracompute.com/free/ (verified 17 Oct 2026).'
+	],
 	'google-ai-studio': [
 		'Google AI Studio is the console for the Gemini API. A free key is an email away, no card, and it is one of the few endpoints here that treats images, audio, video and PDFs as first-class input. The current Flash is Gemini 3.7 — still a million tokens of context on that tier.',
 		'The published ceiling is 15 requests a minute and 1,500 a day, reset at midnight Pacific. Point the OpenAI SDK at generativelanguage.googleapis.com/v1beta/openai and keep the rest of your code. The trade: free-tier prompts and responses may be used to improve Google’s models, so nothing confidential belongs here.'

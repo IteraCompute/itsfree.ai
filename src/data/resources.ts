@@ -264,6 +264,18 @@ export const RESOURCES: Resource[] = [
 		openaiCompatible: true
 	},
 	{
+		id: 'iteracompute',
+		name: 'IteraCompute',
+		url: 'https://iteracompute.com/free/',
+		description: 'Self-hosted Qwen3.8-27B with a recurring monthly free allowance. No card or top-up.',
+		category: 'api',
+		quota: '30M tokens per month',
+		limits: ['160K tokens/minute', '128K context', '1 free model'],
+		models: ['qwen-3-8-27b'],
+		noCard: true,
+		openaiCompatible: true
+	},
+	{
 		id: 'cloud-modelscope',
 		name: 'ModelScope',
 		url: 'https://modelscope.cn',
